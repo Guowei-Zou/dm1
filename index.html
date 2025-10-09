@@ -58,24 +58,34 @@
 
         .links {
             margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            margin: 10px;
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
             background-color: white;
             color: #667eea;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 6px;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            white-space: nowrap;
         }
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            opacity: 0.95;
         }
 
         .section {
@@ -243,6 +253,15 @@
             .grid {
                 grid-template-columns: 1fr;
             }
+
+            .links {
+                gap: 8px;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.85em;
+            }
         }
     </style>
 </head>
@@ -257,9 +276,13 @@
             </div>
 
             <div class="links">
-                <a href="#" class="btn">📄 Paper</a>
-                <a href="#" class="btn">💻 Code</a>
-                <a href="#" class="btn">🎥 Video</a>
+                <a href="https://guowei-zou.github.io/dm1/" class="btn" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: 2px solid rgba(255,255,255,0.3);">🚀 Project Page</a>
+                <a href="<DM1_PAPER_URL>" class="btn" style="background-color: #B31B1B; color: white;">📄 Paper</a>
+                <a href="https://github.com/Guowei-Zou/dm1-release" class="btn" style="background-color: #24292e; color: white;">💻 Code</a>
+                <a href="<DM1_DEMO_VIDEO_URL>" class="btn" style="background-color: #FF0000; color: white;">🎥 Youtube</a>
+                <a href="<DM1_PLAYLIST_URL>" class="btn" style="background-color: #00A1D6; color: white;">📺 Bilibili</a>
+                <a href="https://drive.google.com/drive/folders/1l5JZvx9OBXRW0A6Vy27aO967J85DaKh8?usp=sharing" class="btn" style="background-color: #34A853; color: white;">🔗 Checkpoints</a>
+                <a href="https://drive.google.com/drive/folders/1OjsDdBxOVy2x77cwsL1V2T7ey_slp7nj?usp=sharing" class="btn" style="background-color: #4285F4; color: white;">📊 Results</a>
             </div>
         </div>
     </header>
@@ -542,10 +565,8 @@
             <div class="citation">@inproceedings{dm1_2026,
     title={DM1: MeanFlow with Dispersive Regularization for 1-Step Robotic Manipulation},
     author={Anonymous Authors},
-    booktitle={Proceedings of the 25th International Conference on 
-               Autonomous Agents and Multiagent Systems (AAMAS 2026)},
-    year={2026},
-    address={Paphos, Cyprus}
+    booktitle={},
+    year={2026}
 }</div>
         </section>
 
