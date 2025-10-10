@@ -262,6 +262,17 @@
                 padding: 8px 16px;
                 font-size: 0.85em;
             }
+
+            .video-grid {
+                grid-template-columns: 1fr 1fr !important;
+            }
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
         }
     </style>
 </head>
@@ -272,15 +283,18 @@
             <div class="subtitle">for 1-Step Robotic Manipulation</div>
             
             <div class="authors">
-                <span class="author-name">Anonymous Authors</span>
+                <a href="https://guowei-zou.github.io/Guowei-Zou/" target="_blank" style="color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.5);">Guowei Zou</a>,
+                Haitao Wang,
+                <a href="https://cse.sysu.edu.cn/teacher/WuHejun" target="_blank" style="color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.5);">Hejun Wu</a>,
+                Yukun Qian, Yuhang Wang, and <a href="https://cse.sysu.edu.cn/en/teacher/LiWeibing" target="_blank" style="color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.5);">Weibing Li</a><sup>*</sup>
             </div>
 
             <div class="links">
                 <a href="https://guowei-zou.github.io/dm1/" class="btn" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: 2px solid rgba(255,255,255,0.3);">🚀 Project Page</a>
-                <a href="<https://arxiv.org/abs/2510.07865>" class="btn" style="background-color: #B31B1B; color: white;">📄 Paper</a>
+                <a href="https://arxiv.org/abs/2510.07865" class="btn" style="background-color: #B31B1B; color: white;">📄 Paper</a>
                 <a href="https://github.com/Guowei-Zou/dm1-release" class="btn" style="background-color: #24292e; color: white;">💻 Code</a>
-                <a href="<https://www.youtube.com/watch?v=7d2IIOu8kig>" class="btn" style="background-color: #FF0000; color: white;">🎥 Youtube</a>
-                <a href="<https://www.bilibili.com/video/BV1uHxizNEz8/?vd_source=98a4f8824045d25ef69b303e7d4ce35e>" class="btn" style="background-color: #00A1D6; color: white;">📺 Bilibili</a>
+                <a href="https://www.youtube.com/watch?v=7d2IIOu8kig" class="btn" style="background-color: #FF0000; color: white;">🎥 Youtube</a>
+                <a href="https://www.bilibili.com/video/BV1uHxizNEz8/?vd_source=98a4f8824045d25ef69b303e7d4ce35e" class="btn" style="background-color: #00A1D6; color: white;">📺 Bilibili</a>
                 <a href="https://drive.google.com/drive/folders/1l5JZvx9OBXRW0A6Vy27aO967J85DaKh8?usp=sharing" class="btn" style="background-color: #34A853; color: white;">🔗 Checkpoints</a>
                 <a href="https://drive.google.com/drive/folders/1OjsDdBxOVy2x77cwsL1V2T7ey_slp7nj?usp=sharing" class="btn" style="background-color: #4285F4; color: white;">📊 Results</a>
             </div>
@@ -449,6 +463,33 @@
                 <img src="images/real_world.png" alt="Real Robot Experiments">
                 <div class="caption">
                     Real-world deployment on Franka Panda manipulator: grasping tasks showing MeanFlow success (green checkmarks) vs. ShortCut Flow failures (red crosses). Top row: wrist-mounted camera views (actual visual input to policy). Middle row: successful executions. Bottom row: failure cases.
+                </div>
+            </div>
+
+            <div class="video-grid">
+                <div>
+                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <source src="lift_success.mp4" type="video/mp4">
+                    </video>
+                    <div class="caption" style="margin-top: 10px; text-align: center;">Lift Task - Success ✅</div>
+                </div>
+                <div>
+                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <source src="lift_fail.mp4" type="video/mp4">
+                    </video>
+                    <div class="caption" style="margin-top: 10px; text-align: center;">Lift Task - Failure ❌</div>
+                </div>
+                <div>
+                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <source src="can_success.mp4" type="video/mp4">
+                    </video>
+                    <div class="caption" style="margin-top: 10px; text-align: center;">Can Task - Success ✅</div>
+                </div>
+                <div>
+                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <source src="can_fail.mp4" type="video/mp4">
+                    </video>
+                    <div class="caption" style="margin-top: 10px; text-align: center;">Can Task - Failure ❌</div>
                 </div>
             </div>
 
