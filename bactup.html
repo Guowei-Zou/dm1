@@ -13,16 +13,22 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+            color: #4a4a4a;
+            background-color: #ffffff;
+            font-size: 16px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 960px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 1.5rem;
+        }
+
+        .is-max-desktop {
+            max-width: 960px;
+            margin: 0 auto;
         }
 
         header {
@@ -33,69 +39,50 @@
         }
 
         h1 {
-            font-size: 2.8em;
-            margin-bottom: 0.3rem;
+            font-size: 2.5em;
+            margin-bottom: 0;
             font-weight: 600;
             color: #363636;
             line-height: 1.125;
-            max-width: 1200px;
+            max-width: 1000px;
             margin-left: auto;
             margin-right: auto;
-            white-space: nowrap;
-        }
-
-        @media (max-width: 1100px) {
-            h1 {
-                font-size: 2.4em;
-            }
-        }
-
-        @media (max-width: 900px) {
-            h1 {
-                font-size: 2em;
-            }
         }
 
         .subtitle {
-            font-size: 2.2em;
-            margin-bottom: 1rem;
+            font-size: 2.5em;
+            margin-bottom: 0;
             color: #363636;
             font-weight: 600;
             line-height: 1.125;
         }
 
         .authors {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             margin-top: 1.5rem;
-            margin-bottom: 0.85rem;
-            line-height: 1.6;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
             color: #4a4a4a;
         }
 
         .authors a {
             color: #4a4a4a;
             text-decoration: none;
-            border-bottom: 1px solid #4a4a4a;
         }
 
         .authors a:hover {
             color: #3273dc;
-            border-bottom: 1px solid #3273dc;
         }
 
         .affiliation {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             color: #4a4a4a;
-            margin-bottom: 1.8rem;
-            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
         }
 
         .author-block {
             display: inline;
-        }
-
-        .link-block {
-            display: inline-block;
         }
 
         .links {
@@ -107,6 +94,10 @@
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .link-block {
+            display: inline-block;
         }
 
         .btn {
@@ -124,7 +115,6 @@
             white-space: nowrap;
             transition: all 0.2s ease;
             line-height: 1.5;
-            gap: 0.5em;
         }
 
         .btn:hover {
@@ -132,141 +122,147 @@
             color: #fff;
         }
 
-        .btn .icon {
-            font-size: 1.1em;
-            line-height: 1;
-        }
-
-        .btn[href*="guowei-zou.github.io"] {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .btn[href*="guowei-zou.github.io"]:hover {
-            background: linear-gradient(135deg, #5568d3 0%, #653a8b 100%);
-        }
-
-        .btn[href*="arxiv.org"] {
-            background-color: #B31B1B;
-        }
-
-        .btn[href*="arxiv.org"]:hover {
-            background-color: #8d1515;
-        }
-
-        .btn[href*="github.com"] {
-            background-color: #24292e;
-        }
-
-        .btn[href*="github.com"]:hover {
-            background-color: #1a1e22;
-        }
-
-        .btn[href*="youtube.com"] {
-            background-color: #FF0000;
-        }
-
-        .btn[href*="youtube.com"]:hover {
-            background-color: #cc0000;
-        }
-
-        .btn[href*="bilibili.com"] {
-            background-color: #00A1D6;
-        }
-
-        .btn[href*="bilibili.com"]:hover {
-            background-color: #0081ab;
-        }
-
-        .btn[href*="1l5JZvx9OBXRW0A6Vy27aO967J85DaKh8"] {
-            background-color: #34A853;
-        }
-
-        .btn[href*="1l5JZvx9OBXRW0A6Vy27aO967J85DaKh8"]:hover {
-            background-color: #2a8642;
-        }
-
-        .btn[href*="1OjsDdBxOVy2x77cwsL1V2T7ey_slp7nj"] {
-            background-color: #4285F4;
-        }
-
-        .btn[href*="1OjsDdBxOVy2x77cwsL1V2T7ey_slp7nj"]:hover {
-            background-color: #3367d6;
-        }
-
         .section {
-            background: white;
-            margin: 40px 0;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: transparent;
+            padding: 3rem 1.5rem;
+        }
+
+        .section.hero {
+            background-color: #ffffff;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-alternate {
+            background-color: #f5f5f5;
+            padding: 3rem 1.5rem;
+        }
+
+        .section-white {
+            background-color: #ffffff;
+            padding: 3rem 1.5rem;
+        }
+
+        .divider {
+            border-top: 1px solid #dbdbdb;
+            margin: 3rem 0;
         }
 
         h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #667eea;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #363636;
+            font-weight: 600;
+            line-height: 1.125;
+        }
+
+        .title.is-3 {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.125;
+            color: #363636;
         }
 
         h3 {
-            font-size: 1.5em;
-            margin: 30px 0 15px 0;
-            color: #764ba2;
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+            color: #363636;
+            font-weight: 600;
+            line-height: 1.125;
+        }
+
+        .title.is-4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.125;
+            color: #363636;
+        }
+
+        .content {
+            line-height: 1.5;
+        }
+
+        .content.has-text-justified {
+            text-align: justify;
+        }
+
+        .content.has-text-centered {
+            text-align: center;
         }
 
         .tldr {
-            background: #e7f3ff;
-            padding: 25px;
-            border-radius: 8px;
-            border-left: 5px solid #667eea;
-            margin: 20px 0;
-            font-size: 1.1em;
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+            font-size: 1rem;
+            line-height: 1.7;
         }
 
         .highlight {
-            background-color: #fff3cd;
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-weight: 600;
+            background-color: yellow;
+            padding: 2px 4px;
+            font-weight: 700;
+        }
+
+        b {
+            font-weight: 700;
+        }
+
+        strong {
+            font-weight: 700;
         }
 
         .research-question {
-            color: #dc3545;
-            font-weight: 700;
-            font-size: 1.15em;
-            margin: 25px 0 15px 0;
-            padding: 15px 20px;
-            background: #fff5f5;
-            border-left: 4px solid #dc3545;
-            border-radius: 4px;
+            color: #c7254e;
+            font-weight: 600;
+            font-size: 1.05em;
+            margin: 22px 0 14px 0;
+            padding: 14px 18px;
+            background: #f9f2f4;
+            border-left: 3px solid #c7254e;
+            border-radius: 2px;
         }
 
         .media-container {
-            margin: 30px 0;
+            margin: 2rem 0;
             text-align: center;
         }
 
         .media-container img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: block;
+            margin: 0 auto;
         }
 
         .media-container video {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: block;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
         }
 
         .caption {
-            margin-top: 15px;
-            font-style: italic;
-            color: #666;
+            margin-top: 1rem;
+            font-style: normal;
+            color: #4a4a4a;
             font-size: 0.95em;
             line-height: 1.5;
+            text-align: center;
+        }
+
+        .has-text-centered {
+            text-align: center;
         }
 
         .grid {
@@ -277,82 +273,137 @@
         }
 
         .card {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 8px;
-            border: 2px solid #e9ecef;
-            transition: all 0.3s ease;
-        }
-
-        .card:hover {
-            border-color: #667eea;
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #dbdbdb;
         }
 
         .card h3 {
             margin-top: 0;
-            color: #667eea;
+            color: #363636;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
         }
 
         ul {
-            margin-left: 20px;
-            margin-top: 10px;
+            margin-left: 2em;
+            margin-top: 1em;
+            list-style: disc;
         }
 
         li {
-            margin: 8px 0;
+            margin: 0.5em 0;
+        }
+
+        .content ul {
+            list-style: disc outside;
+            margin-left: 2em;
+            margin-top: 1em;
+        }
+
+        .content li {
+            margin: 0.5em 0;
         }
 
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 30px 0;
+            margin: 2rem 0;
+            font-size: 0.9rem;
         }
 
         .comparison-table th,
         .comparison-table td {
-            padding: 15px;
+            padding: 0.75em 0.75em;
             text-align: left;
-            border-bottom: 1px solid #e9ecef;
+            border: 1px solid #dbdbdb;
         }
 
         .comparison-table th {
-            background-color: #667eea;
-            color: white;
-            font-weight: 600;
+            background-color: #f5f5f5;
+            color: #363636;
+            font-weight: 700;
         }
 
         .comparison-table tr:hover {
-            background-color: #f8f9fa;
+            background-color: #fafafa;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
         .citation {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9em;
-            margin: 20px 0;
-            border-left: 4px solid #667eea;
+            background: #f5f5f5;
+            padding: 1.25em;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.875em;
+            margin: 1.5rem 0;
+            border: 1px solid #dbdbdb;
             overflow-x: auto;
             white-space: pre-wrap;
         }
 
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            margin-top: 60px;
+        pre {
+            background: #f5f5f5;
+            padding: 1.25em;
+            overflow-x: auto;
         }
 
-        @media (max-width: 768px) {
+        code {
+            font-family: monospace;
+            background: #f5f5f5;
+            padding: 0.25em 0.5em;
+            font-size: 0.875em;
+        }
+
+        footer {
+            background-color: #fafafa;
+            padding: 3rem 1.5rem 3rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer {
+            background-color: #fafafa;
+            padding: 3rem 1.5rem 3rem;
+        }
+
+        .footer .content {
+            text-align: center;
+        }
+
+        .footer p {
+            color: #4a4a4a;
+            margin: 0.5rem 0;
+        }
+
+        @media screen and (max-width: 768px) {
             h1 {
-                font-size: 1.8em;
+                font-size: 1.75rem;
+            }
+
+            .subtitle {
+                font-size: 1.75rem;
+            }
+
+            .title.is-1 {
+                font-size: 1.75rem;
+            }
+
+            h2, .title.is-3 {
+                font-size: 1.5rem;
+            }
+
+            h3, .title.is-4 {
+                font-size: 1.25rem;
             }
 
             .section {
-                padding: 20px;
+                padding: 1.5rem 0.75rem;
             }
 
             .grid {
@@ -360,16 +411,20 @@
             }
 
             .links {
-                gap: 8px;
+                gap: 0.5rem;
             }
 
             .btn {
-                padding: 8px 16px;
-                font-size: 0.85em;
+                padding: 0.4em 0.75em;
+                font-size: 0.875rem;
             }
 
             .video-grid {
-                grid-template-columns: 1fr 1fr !important;
+                grid-template-columns: 1fr !important;
+            }
+
+            .container {
+                padding: 0 1rem;
             }
         }
 
@@ -386,7 +441,7 @@
         <div class="container">
             <h1>DM1: MeanFlow with Dispersive Regularization</h1>
             <div class="subtitle">for 1-Step Robotic Manipulation</div>
-
+            
             <div class="authors">
                 <span class="author-block">
                     <a href="https://guowei-zou.github.io/Guowei-Zou/" target="_blank">Guowei Zou</a><sup>1</sup>,
@@ -416,140 +471,99 @@
 
             <div class="links">
                 <span class="link-block">
-                    <a href="https://guowei-zou.github.io/dm1/" class="btn" target="_blank">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
-                            </svg>
-                        </span>
-                        <span>Project Page</span>
-                    </a>
+                    <a href="https://guowei-zou.github.io/dm1/" class="btn" target="_blank">Project Page</a>
                 </span>
                 <span class="link-block">
-                    <a href="https://arxiv.org/abs/2510.07865" class="btn" target="_blank">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                                <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-                            </svg>
-                        </span>
-                        <span>Paper</span>
-                    </a>
+                    <a href="https://arxiv.org/abs/2510.07865" class="btn" target="_blank">Paper</a>
                 </span>
                 <span class="link-block">
-                    <a href="https://github.com/Guowei-Zou/dm1-release" class="btn" target="_blank">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                        </span>
-                        <span>Code</span>
-                    </a>
+                    <a href="https://github.com/Guowei-Zou/dm1-release" class="btn" target="_blank">Code</a>
                 </span>
                 <span class="link-block">
-                    <a href="https://www.youtube.com/watch?v=7d2IIOu8kig" class="btn" target="_blank">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                            </svg>
-                        </span>
-                        <span>Video (YouTube)</span>
-                    </a>
+                    <a href="https://www.youtube.com/watch?v=7d2IIOu8kig" class="btn" target="_blank">Video (YouTube)</a>
                 </span>
                 <span class="link-block">
-                    <a href="https://www.bilibili.com/video/BV1uHxizNEz8/?vd_source=98a4f8824045d25ef69b303e7d4ce35e" class="btn" target="_blank">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                                <path d="M4 1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm6 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
-                            </svg>
-                        </span>
-                        <span>Video (Bilibili)</span>
-                    </a>
-                </span>
-                <div style="flex-basis: 100%; height: 0;"></div>
-                <span class="link-block">
-                    <a href="https://drive.google.com/drive/folders/1l5JZvx9OBXRW0A6Vy27aO967J85DaKh8?usp=sharing" class="btn" target="_blank">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3.563a2 2 0 0 1 1.414.586l.647.646a.5.5 0 0 0 .354.146H14.5A1.5 1.5 0 0 1 16 4v7a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11V4a2 2 0 0 1 2-1.5h1z"/>
-                            </svg>
-                        </span>
-                        <span>Checkpoints</span>
-                    </a>
+                    <a href="https://www.bilibili.com/video/BV1uHxizNEz8/?vd_source=98a4f8824045d25ef69b303e7d4ce35e" class="btn" target="_blank">Video (Bilibili)</a>
                 </span>
                 <span class="link-block">
-                    <a href="https://drive.google.com/drive/folders/1OjsDdBxOVy2x77cwsL1V2T7ey_slp7nj?usp=sharing" class="btn" target="_blank">
-                        <span class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
-                            </svg>
-                        </span>
-                        <span>Results</span>
-                    </a>
+                    <a href="https://drive.google.com/drive/folders/1l5JZvx9OBXRW0A6Vy27aO967J85DaKh8?usp=sharing" class="btn" target="_blank">Checkpoints</a>
+                </span>
+                <span class="link-block">
+                    <a href="https://drive.google.com/drive/folders/1OjsDdBxOVy2x77cwsL1V2T7ey_slp7nj?usp=sharing" class="btn" target="_blank">Results</a>
                 </span>
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <!-- TL;DR Section -->
-        <section class="section">
-            <div class="tldr">
-                <strong>TL;DR:</strong> We introduce <strong>DM1</strong>, a novel flow matching framework that integrates dispersive regularization into MeanFlow to enable <span class="highlight">one-step action generation</span> while preventing representation collapse. DM1 achieves <span class="highlight">20-40× faster inference</span> and improves success rates by <span class="highlight">10-20 percentage points</span> on robotic manipulation tasks, demonstrating robust sim-to-real transfer.
-            </div>
-        </section>
-
-        <!-- Abstract Figure -->
-        <section class="section">
-            <h2>Overview</h2>
-            <div class="media-container">
-                <img src="images/abstract_image.png" alt="DM1 Overview">
-                <div class="caption">
-                    Visualization of the effect of dispersive regularization in DM1: (a) Example rollouts showing how similar observations can lead to incorrect vs. correct grasps; (b–c) Feature distributions without and with dispersive loss; (d) Method landscape illustrating the speed–quality trade-off; (e) Quantitative comparison of success rate versus inference time.
+    <!-- TL;DR Section -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="content">
+                <div class="tldr">
+                    <strong>TL;DR:</strong> We introduce <strong>DM1</strong>, a novel flow matching framework that integrates dispersive regularization into MeanFlow to enable <span class="highlight">one-step action generation</span> while preventing representation collapse. DM1 achieves <span class="highlight">20-40× faster inference</span> and improves success rates by <span class="highlight">10-20 percentage points</span> on robotic manipulation tasks, demonstrating robust sim-to-real transfer.
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Approach Overview -->
-        <section class="section">
-            <h2>Approach Overview</h2>
+    <!-- Abstract Figure -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Overview</h2>
+            <div class="content has-text-centered">
+                <img src="images/abstract_image.png" alt="DM1 Overview">
+                <p class="caption">
+                    Visualization of the effect of dispersive regularization in DM1: (a) Example rollouts showing how similar observations can lead to incorrect vs. correct grasps; (b–c) Feature distributions without and with dispersive loss; (d) Method landscape illustrating the speed–quality trade-off; (e) Quantitative comparison of success rate versus inference time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Overview -->
+    <section class="section-alternate">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Approach Overview</h2>
+            <div class="content has-text-justified">
             
             <p>DM1 addresses two fundamental challenges in flow-based robotic control:</p>
 
             <div class="grid">
                 <div class="card">
-                    <h3>🚀 Challenge 1: One-Step Efficiency</h3>
+                    <h3>Challenge 1: One-Step Efficiency</h3>
                     <p>Diffusion policies require 50-100 neural function evaluations (NFEs), preventing real-time deployment. Flow-based models reduce steps but still require iterative ODE integration.</p>
                     <p><strong>Our Solution:</strong> MeanFlow enables true 1-NFE generation by directly predicting average velocity fields, achieving <span class="highlight">20-40× speedup</span>.</p>
                 </div>
 
                 <div class="card">
-                    <h3>⚠️ Challenge 2: Representation Collapse</h3>
+                    <h3>Challenge 2: Representation Collapse</h3>
                     <p>One-step generation methods suffer from representation collapse where distinct observations map to nearly identical embeddings, degrading performance on complex tasks.</p>
                     <p><strong>Our Solution:</strong> Dispersive regularization encourages feature diversity across multiple embedding layers without architectural modifications.</p>
                 </div>
             </div>
 
-            <div class="media-container">
+            <div class="content has-text-centered">
                 <img src="images/DM1.png" alt="DM1 Framework">
-                <div class="caption">
+                <p class="caption">
                     DM1 Framework Architecture: Integrating one-step action generation with dispersive regularization across multimodal inputs (vision + state).
-                </div>
+                </p>
             </div>
 
-            <h3>Key Technical Contributions</h3>
+            <h3 class="title is-4">Key Technical Contributions</h3>
             <ul>
                 <li><strong>One-Step MeanFlow:</strong> Direct transformation from Gaussian noise to target actions through learned average velocity fields</li>
                 <li><strong>Multi-Layer Dispersive Regularization:</strong> Applied to temporal, noise, and conditional embeddings to prevent collapse</li>
                 <li><strong>Four Regularization Variants:</strong> InfoNCE-L2, InfoNCE-Cosine, Hinge Loss, and Covariance-based methods</li>
                 <li><strong>No Architectural Changes:</strong> Simple regularization mechanism requiring no additional network modules</li>
             </ul>
-        </section>
+            </div>
+        </div>
+    </section>
 
-        <!-- Performance Evaluation -->
-        <section class="section">
-            <h2>Performance Evaluation</h2>
+    <!-- Performance Evaluation -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Performance Evaluation</h2>
+            <div class="content has-text-justified">
 
             <p>To comprehensively evaluate the performance and effectiveness of the DM1 framework, our analysis focuses on the following four research questions:</p>
 
@@ -569,11 +583,11 @@
 
             <p><strong>Answer:</strong> Yes. Dispersive regularization significantly improves success rates across all tasks by preventing representation collapse. As shown in Figure 3 below, MeanFlow with dispersive regularization (MF+Disp) consistently outperforms vanilla MeanFlow (MF), especially on complex tasks like Transport.</p>
 
-            <div class="media-container">
+            <div class="content has-text-centered">
                 <img src="images/evaluation_overview_success_rate.png" alt="Success Rate Comparison">
-                <div class="caption">
+                <p class="caption">
                     <strong>Figure 3:</strong> Comprehensive evaluation across varying denoising steps and weight configurations on four robotic manipulation tasks (Lift, Can, Square, Transport). The results validate RQ2 by showing that dispersive regularization prevents collapse and improves performance.
-                </div>
+                </p>
             </div>
 
             <table class="comparison-table">
@@ -624,11 +638,11 @@
 
             <p><strong>Answer:</strong> Among the four dispersive regularization variants (InfoNCE-L2, InfoNCE-Cosine, Hinge, Covariance-based), <strong>InfoNCE-Cosine performs best</strong>. Figure 4 below shows the analysis across different regularization weights:</p>
 
-            <div class="media-container">
+            <div class="content has-text-centered">
                 <img src="images/selected_success_vs_frequency_large_points.png" alt="Dispersive Variants Analysis">
-                <div class="caption">
+                <p class="caption">
                     <strong>Figure 4:</strong> Analysis of success rate versus weight configurations across different tasks. This addresses RQ3 by comparing different dispersive regularization variants, showing InfoNCE-Cosine's superior performance.
-                </div>
+                </p>
             </div>
 
             <p><strong>Key Findings:</strong></p>
@@ -638,11 +652,15 @@
                 <li><strong>Hinge Loss:</strong> Enforces minimum separation margin - effective for simple tasks</li>
                 <li><strong>Covariance-Based:</strong> Encourages decorrelation - moderate performance</li>
             </ul>
-        </section>
+            </div>
+        </div>
+    </section>
 
-        <!-- Real-World Deployment -->
-        <section class="section">
-            <h2>Real-World Deployment</h2>
+    <!-- Real-World Deployment -->
+    <section class="section-alternate">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3">Real-World Deployment</h2>
+            <div class="content has-text-justified">
 
             <div class="research-question">
                 RQ4: Does DM1 transfer to real-world robotic systems?
@@ -650,49 +668,49 @@
 
             <p><strong>Answer:</strong> Yes. We validated DM1 on a <strong>Franka-Emika-Panda</strong> robot with eye-in-hand RGB camera (96×96×3) using an NVIDIA RTX 2080 GPU, demonstrating robust sim-to-real transfer.</p>
 
-            <div class="media-container">
+            <div class="content has-text-centered">
                 <img src="images/real_world.png" alt="Real Robot Experiments">
-                <div class="caption">
+                <p class="caption">
                     Real-world deployment on Franka Panda manipulator: grasping tasks showing MeanFlow success (green checkmarks) vs. ShortCut Flow failures (red crosses). Top row: wrist-mounted camera views (actual visual input to policy). Middle row: successful executions. Bottom row: failure cases.
-                </div>
+                </p>
             </div>
 
             <div class="video-grid">
                 <div>
-                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <video controls style="width: 100%;">
                         <source src="lift_success.mp4" type="video/mp4">
                     </video>
-                    <div class="caption" style="margin-top: 10px; text-align: center;">Lift Task - Success ✅</div>
+                    <p style="margin-top: 10px; text-align: center; font-size: 0.9em;">Lift Task - Success</p>
                 </div>
                 <div>
-                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <video controls style="width: 100%;">
                         <source src="lift_fail.mp4" type="video/mp4">
                     </video>
-                    <div class="caption" style="margin-top: 10px; text-align: center;">Lift Task - Failure ❌</div>
+                    <p style="margin-top: 10px; text-align: center; font-size: 0.9em;">Lift Task - Failure</p>
                 </div>
                 <div>
-                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <video controls style="width: 100%;">
                         <source src="can_success.mp4" type="video/mp4">
                     </video>
-                    <div class="caption" style="margin-top: 10px; text-align: center;">Can Task - Success ✅</div>
+                    <p style="margin-top: 10px; text-align: center; font-size: 0.9em;">Can Task - Success</p>
                 </div>
                 <div>
-                    <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <video controls style="width: 100%;">
                         <source src="can_fail.mp4" type="video/mp4">
                     </video>
-                    <div class="caption" style="margin-top: 10px; text-align: center;">Can Task - Failure ❌</div>
+                    <p style="margin-top: 10px; text-align: center; font-size: 0.9em;">Can Task - Failure</p>
                 </div>
             </div>
 
-            <h3>Key Results</h3>
+            <h3 class="title is-4">Key Results</h3>
             <ul>
-                <li>✅ <strong>Real-time control:</strong> 19.2ms total latency enabling <span class="highlight">50Hz+ control frequency</span></li>
-                <li>✅ <strong>Robust execution:</strong> Natural, smooth motions without jittery behavior</li>
-                <li>✅ <strong>Practical viability:</strong> Successfully completed manipulation tasks that baseline methods failed</li>
-                <li>✅ <strong>Sim-to-real transfer:</strong> Policies trained in simulation transfer effectively to physical hardware</li>
+                <li><strong>Real-time control:</strong> 19.2ms total latency enabling <span class="highlight">50Hz+ control frequency</span></li>
+                <li><strong>Robust execution:</strong> Natural, smooth motions without jittery behavior</li>
+                <li><strong>Practical viability:</strong> Successfully completed manipulation tasks that baseline methods failed</li>
+                <li><strong>Sim-to-real transfer:</strong> Policies trained in simulation transfer effectively to physical hardware</li>
             </ul>
 
-            <h3>Latency Breakdown (Real Robot)</h3>
+            <h3 class="title is-4">Latency Breakdown (Real Robot)</h3>
             <p>Per-stage latency breakdown (ms) for Lift task on physical robot. MF: MeanFlow (Ours), SC: ShortCut, RF: ReFlow. Numbers in parentheses indicate denoising steps.</p>
             
             <table class="comparison-table" style="font-size: 0.9em; margin-top: 20px;">
@@ -789,11 +807,15 @@
                 <li><strong>Planning Bottleneck:</strong> Motion planning complexity (1.7ms to 604.8ms) dominates total latency for complex planners</li>
                 <li><strong>Practical Insight:</strong> Efficient MeanFlow inference enables real-time control even with simple planning strategies</li>
             </ul>
-        </section>
+            </div>
+        </div>
+    </section>
 
-        <!-- Citation -->
-        <section class="section">
-            <h2>Citation</h2>
+    <!-- Citation -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="content">
+            <h2 class="title is-3">Citation</h2>
             <div class="citation">@misc{zou2025dm1meanflowdispersiveregularization,
     title={DM1: MeanFlow with Dispersive Regularization for 1-Step Robotic Manipulation},
     author={Guowei Zou and Haitao Wang and Hejun Wu and Yukun Qian and Yuhang Wang and Weibing Li},
@@ -803,26 +825,32 @@
     primaryClass={cs.RO},
     url={https://arxiv.org/abs/2510.07865}
 }</div>
-        </section>
+            </div>
+        </div>
+    </section>
 
-        <!-- Related Work -->
-        <section class="section">
-            <h2>Related Work</h2>
+    <!-- Related Work -->
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="content">
+            <h2 class="title is-3">Related Work</h2>
             <ul>
-                <li><strong><a href="https://arxiv.org/abs/2303.04137" target="_blank" style="color: #667eea; text-decoration: none;">Diffusion Policy</a></strong> (CoRL 2023): Pioneered diffusion models for visuomotor control</li>
-                <li><strong><a href="https://arxiv.org/abs/2505.22094" target="_blank" style="color: #667eea; text-decoration: none;">ReinFlow</a></strong> (2025): Flow matching with online RL for robotic manipulation</li>
-                <li><strong><a href="https://arxiv.org/abs/2505.13447" target="_blank" style="color: #667eea; text-decoration: none;">MeanFlow</a></strong> (NeurIPS 2025): Mean flows for one-step generative modeling</li>
-                <li><strong><a href="https://arxiv.org/abs/2412.04987" target="_blank" style="color: #667eea; text-decoration: none;">FlowPolicy</a></strong> (AAAI 2025): 3D flow-based policy via consistency flow matching</li>
-                <li><strong><a href="https://arxiv.org/abs/2508.02644" target="_blank" style="color: #667eea; text-decoration: none;">D2PPO</a></strong> (2025): Diffusion Policy Policy Optimization with Dispersive Loss</li>
-                <li><strong><a href="https://arxiv.org/abs/2504.16054" target="_blank" style="color: #667eea; text-decoration: none;">π<sub>0.5</sub></a></strong> (2025): a Vision-Language-Action Model with Open-World Generalization</li>
+                <li><strong><a href="https://arxiv.org/abs/2303.04137" target="_blank" style="color: #2c5aa0; text-decoration: none;">Diffusion Policy</a></strong> (CoRL 2023): Pioneered diffusion models for visuomotor control</li>
+                <li><strong><a href="https://arxiv.org/abs/2505.22094" target="_blank" style="color: #2c5aa0; text-decoration: none;">ReinFlow</a></strong> (2025): Flow matching with online RL for robotic manipulation</li>
+                <li><strong><a href="https://arxiv.org/abs/2505.13447" target="_blank" style="color: #2c5aa0; text-decoration: none;">MeanFlow</a></strong> (NeurIPS 2025): Mean flows for one-step generative modeling</li>
+                <li><strong><a href="https://arxiv.org/abs/2412.04987" target="_blank" style="color: #2c5aa0; text-decoration: none;">FlowPolicy</a></strong> (AAAI 2025): 3D flow-based policy via consistency flow matching</li>
+                <li><strong><a href="https://arxiv.org/abs/2508.02644" target="_blank" style="color: #2c5aa0; text-decoration: none;">D2PPO</a></strong> (2025): Diffusion Policy Policy Optimization with Dispersive Loss</li>
+                <li><strong><a href="https://arxiv.org/abs/2504.16054" target="_blank" style="color: #2c5aa0; text-decoration: none;">π<sub>0.5</sub></a></strong> (2025): a Vision-Language-Action Model with Open-World Generalization</li>
             </ul>
-        </section>
-    </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 DM1 Project. All rights reserved.</p>
-            <p style="margin-top: 10px; font-size: 0.9em;">AAMAS 2026 Submission</p>
+            <div class="content">
+                <p>Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">NeRFies</a>.</p>
+            </div>
         </div>
     </footer>
 </body>
